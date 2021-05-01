@@ -1,0 +1,34 @@
+.hero {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  padding: 0px 45px;
+
+  &__greet {
+    display: flex;
+    font-size: clamp(14px, 5vw, 16px);
+  }
+  &__name {
+    display: flex;
+    font-size: clamp(40px, 8vw, 80px);
+  }
+  &__catchphrase {
+    display: flex;
+
+    font-size: clamp(40px, 8vw, 80px);
+  }
+  &__description {
+    display: flex;
+    font-size: clamp(18px, 3.5vw, 20px);
+    max-width: 500px;
+
+  }
+  &__button {
+    display: flex;
+  }
+}

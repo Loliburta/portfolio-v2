@@ -1,0 +1,24 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato&display=swap");
+//Other Scss
+@import "./components/App";
+@import "./components/navigationBar/NavigationBar";
+@import "./components/hero/Hero";
+@import "./components/aboutMe/AboutMe";
+@import "./components/projects/Projects";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #17171a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
