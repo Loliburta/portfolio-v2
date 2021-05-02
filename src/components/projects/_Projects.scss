@@ -5,10 +5,9 @@
   margin: 0 auto;
   &__list {
     font-size: 10px;
-
     &__item {
-      width: 1000px;
-      height: 500px;
+      max-width: 1000px;
+      max-height: 500px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;

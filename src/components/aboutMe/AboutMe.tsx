@@ -1,7 +1,7 @@
 export const AboutMe = () => {
   return (
     <div className="aboutMe">
-      <div className="aboutMe__heading">01. About Me</div>
+      <div className="aboutMe__heading"> About Me</div>
       <div className="aboutMe__description">
         Welcome and thank you for checking out my site! My name is Mateusz and I
         enjoy creating new things on the web and tackling difficult problems. My

@@ -6,7 +6,28 @@
   &__heading {
     display: flex;
     min-width: 200px;
-    margin-bottom: 10px;
+    font-size: clamp(26px, 5vw, 32px);
+    white-space: nowrap;
+    align-items: center;
+    height: 20px;
+    margin: 10px 0px 40px;
+    &:before {
+      content: "01.";
+      display: flex;
+      margin: 2px 10px 0px 0px;
+      font-family: "Space Mono", monospace;
+      font-size: clamp(18px, 4vw, 23px);
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: relative;
+      margin-left: 20px;
+      margin-top: clamp(4px, 1.2vw, 7px);
+      width: 300px;
+      height: 1px;
+      background-color: white;
+    }
   }
   &__description {
     display: flex;
