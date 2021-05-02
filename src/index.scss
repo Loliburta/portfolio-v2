@@ -1,11 +1,17 @@
 //Fonts
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+
 //Other Scss
 @import "./components/App";
 @import "./components/navigationBar/NavigationBar";
 @import "./components/hero/Hero";
 @import "./components/aboutMe/AboutMe";
 @import "./components/projects/Projects";
+@import "./components/otherProjects/OtherProjects";
+@import "./components/contact/Contact";
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +25,6 @@ body,
   padding: 0;
   background-color: #17171a;
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: "Kanit", sans-serif;
   -webkit-font-smoothing: antialiased;
 }

@@ -12,23 +12,42 @@
   &__greet {
     display: flex;
     font-size: clamp(14px, 5vw, 16px);
+    color: rgb(100, 255, 218);
+    font-family: "Space Mono", monospace;
+    margin-bottom: 5px;
   }
   &__name {
     display: flex;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(30px, 6.7vw, 80px);
+    color: rgb(204, 214, 246);
+    font-weight: 600;
+    line-height: 110%;
   }
   &__catchphrase {
     display: flex;
-
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(30px, 6.7vw, 80px);
+    color: rgb(136, 146, 176);
+    align-items: flex-start;
+    font-weight: 600;
+    justify-content: flex-start;
+    line-height: 110%;
+    margin-bottom: 22px;
   }
   &__description {
     display: flex;
     font-size: clamp(18px, 3.5vw, 20px);
+    color: rgb(136, 146, 176);
     max-width: 500px;
-
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
   }
   &__button {
     display: flex;
+    padding: 20px 28px;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    font-family: "Space Mono", monospace;
+    color: rgb(100, 255, 218);
   }
 }

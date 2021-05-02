@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  &__heading {
+    display: flex;
+    font-size: clamp(26px, 5vw, 32px);
+    justify-content: center;
+  }
+  &__description {
+    display: flex;
+    font-size: clamp(18px, 3.5vw, 20px);
+    justify-content: center;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    width: clamp(200px, 50vw, 500px);
+    border: 2px solid green;
+  }
+  &__buttons {
+    display: flex;
+    font-family: "Space Mono", monospace;
+    &__button {
+      display: flex;
+      padding: 10px;
+      border: 1px solid green;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+  }
+}

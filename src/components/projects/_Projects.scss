@@ -5,23 +5,65 @@
   margin: 0 auto;
   &__list {
     font-size: 10px;
+
     &__item {
       width: 1000px;
       height: 500px;
-
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       gap: 0px 0px;
       &__content {
         grid-area: 1 / 5 / 2 / 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 10;
         border: 2px solid white;
+        &__overline {
+          display: flex;
+          text-align: right;
+          font-size: 13px;
+          font-family: "Space Mono", monospace;
+        }
+        &__title {
+          display: flex;
+          font-size: clamp(24px, 5vw, 28px);
+        }
+        &__description {
+          background-color: rgba(2, 12, 27, 0.7);
+          padding: 25px;
+          text-align: right;
+          font-size: 18px;
+        }
+        &__tech {
+          display: flex;
+          flex-direction: row;
+          font-family: "Space Mono", monospace;
+          &__item {
+            display: flex;
+            padding: 0px 5px 0px 0px;
+          }
+        }
+        &__links {
+          display: flex;
+          flex-direction: row;
+          &__icon {
+            display: flex;
+            padding: 0px 5px;
+          }
+        }
       }
-      &__image {
-        grid-area: 1 / 1 / 2 / 8;
-        width: 100%;
-        height: 100%;
+      &__imageDiv {
+        grid-area: 1 / 1 / 2 / 7;
         border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__img {
+          width: 100%;
+        }
       }
     }
   }

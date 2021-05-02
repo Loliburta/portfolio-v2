@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero__greet">Hello, I'm</div>
+      <div className="hero__greet">Hello, my name is</div>
       <div className="hero__name">Mateusz Maranowski</div>
       <div className="hero__catchphrase">With next generation ideas</div>
       <div className="hero__description">

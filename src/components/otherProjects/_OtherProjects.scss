@@ -1,0 +1,28 @@
+.otherProjects {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  &__heading {
+    font-size: clamp(24px, 5vw, 32px);
+    text-align: center;
+  }
+  &__github {
+    font-size: 14px;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+  }
+  &__projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__item {
+      background-color: rgb(71, 50, 50);
+      margin: 10px;
+      width: 310px;
+      height: 350px;
+      border-radius: 5px;
+    }
+  }
+}
