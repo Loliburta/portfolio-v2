@@ -1,4 +1,5 @@
 import { NavigationBar } from "./navigationBar/NavigationBar";
+import { Socials } from "./socials/Socials";
 import { Hero } from "./hero/Hero";
 import { AboutMe } from "./aboutMe/AboutMe";
 import { Projects } from "./projects/Projects";
@@ -9,6 +10,7 @@ export const App = () => {
   return (
     <div>
       <NavigationBar />
+      <Socials />
       <Hero />
       <AboutMe />
       <Projects />

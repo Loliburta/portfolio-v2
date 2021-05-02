@@ -1,4 +1,4 @@
-// import img1 from "../../images/img1.png";
+import img1 from "../../images/img1.png";
 import { Icon } from "@iconify/react";
 import githubFill from "@iconify-icons/akar-icons/github-fill";
 import externalIcon from "@iconify-icons/gridicons/external";
@@ -43,7 +43,7 @@ export const Projects = () => {
           </div>
           <div className="projects__list__item__imageDiv">
             <img
-              // src={img}
+              src={img1}
               alt="project 1"
               className="projects__list__item__imageDiv__img"
             />

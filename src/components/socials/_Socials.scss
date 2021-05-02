@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  position: fixed;
+  left: 55px;
+  bottom: 0px;
+  flex-direction: column;
+  z-index: 10;
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    &__icon {
+      display: flex;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: white;
+  }
+}
