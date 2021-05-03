@@ -1,8 +1,10 @@
 .aboutMe {
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   flex-direction: column;
   margin: 0 auto;
+  padding-left: clamp(50px, 7vw, 70px);
+  padding-right: clamp(50px, 7vw, 70px);
 
   &__heading {
     display: flex;
@@ -45,24 +47,17 @@
   }
 }
 @media (max-width: 1080px) {
-  .aboutMe {
-    padding: 0px 100px;
-  }
-  .aboutMe__heading::after{
+  .aboutMe__heading::after {
     width: 200px;
   }
-
 }
 @media (max-width: 768px) {
-  .aboutMe {
-    padding: 0px 50px;
-  }
-  .aboutMe__heading::after{
+  .aboutMe__heading::after {
     width: 100%;
   }
 }
 @media (max-width: 360px) {
-  .aboutMe__skillsUl{
+  .aboutMe__skillsUl {
     columns: 1;
   }
 }

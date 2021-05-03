@@ -152,7 +152,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  left: 40px;
+  left: 35px;
   bottom: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -191,7 +191,7 @@ a {
 
 @media (max-width: 1080px) {
   .socials {
-    left: 20px;
+    left: 15px;
   }
 }
 
@@ -205,7 +205,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1000px;
+  max-width: 1100px;
   min-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -220,6 +220,8 @@ a {
   text-align: left;
   margin: 0 auto;
   width: 100%;
+  padding-left: clamp(50px, 7vw, 70px);
+  padding-right: clamp(50px, 7vw, 70px);
 }
 
 .hero__greet {
@@ -236,7 +238,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(36px, 6vw, 77px);
+  font-size: clamp(36px, 6vw, 74px);
   color: #ccd6f6;
   font-weight: 600;
   line-height: 110%;
@@ -247,7 +249,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(36px, 6vw, 77px);
+  font-size: clamp(36px, 6vw, 74px);
   color: #8892b0;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -283,28 +285,18 @@ a {
   color: #64ffda;
 }
 
-@media (max-width: 1080px) {
-  .hero {
-    padding: 0px 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    padding: 0px 50px;
-  }
-}
-
 .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
+  padding-left: clamp(50px, 7vw, 70px);
+  padding-right: clamp(50px, 7vw, 70px);
 }
 
 .aboutMe__heading {
@@ -366,18 +358,12 @@ a {
 }
 
 @media (max-width: 1080px) {
-  .aboutMe {
-    padding: 0px 100px;
-  }
   .aboutMe__heading::after {
     width: 200px;
   }
 }
 
 @media (max-width: 768px) {
-  .aboutMe {
-    padding: 0px 50px;
-  }
   .aboutMe__heading::after {
     width: 100%;
   }
@@ -398,8 +384,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-left: clamp(50px, 7vw, 70px);
+  padding-right: clamp(50px, 7vw, 70px);
 }
 
 .projects__heading {
@@ -553,6 +541,18 @@ a {
 
 .projects__list__item__imageDiv__img {
   width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .projects__heading::after {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects_.projects__heading::after {
+    width: 100%;
+  }
 }
 
 .otherProjects {

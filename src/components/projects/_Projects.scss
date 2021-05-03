@@ -1,8 +1,10 @@
 .projects {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-left: clamp(50px, 7vw, 70px);
+  padding-right: clamp(50px, 7vw, 70px);
   &__heading {
     display: flex;
     min-width: 200px;
@@ -90,5 +92,15 @@
         }
       }
     }
+  }
+}
+@media (max-width: 1080px) {
+  .projects__heading::after {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .projects_.projects__heading::after {
+    width: 100%;
   }
 }
