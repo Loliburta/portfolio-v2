@@ -1,12 +1,16 @@
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 ul {
-  padding: 0;
-  margin: 20px;
+  padding: 0px;
+  margin: 0px;
   list-style: none;
   list-style-type: none;
 }
-a{
-    color: white;
-    text-decoration: none;
+a {
+  color: white;
+  text-decoration: none;
 }
 ::-webkit-scrollbar {
   width: 8px;

@@ -1,9 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 ul {
-  padding: 0;
-  margin: 20px;
+  padding: 0px;
+  margin: 0px;
   list-style: none;
   list-style-type: none;
 }
@@ -201,8 +206,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   max-width: 1000px;
-  margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -214,7 +218,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  padding: 0px 45px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero__greet {
@@ -231,17 +236,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(30px, 6.7vw, 70px);
+  font-size: clamp(36px, 6vw, 77px);
   color: #ccd6f6;
   font-weight: 600;
   line-height: 110%;
+  width: 100%;
 }
 
 .hero__catchphrase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(30px, 6.7vw, 70px);
+  font-size: clamp(36px, 6vw, 77px);
   color: #8892b0;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -279,13 +285,13 @@ a {
 
 @media (max-width: 1080px) {
   .hero {
-    padding: 0px 90px;
+    padding: 0px 100px;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 0px 45px;
+    padding: 0px 50px;
   }
 }
 
@@ -294,25 +300,23 @@ a {
   display: -ms-flexbox;
   display: flex;
   max-width: 900px;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 45px;
+  margin: 0 auto;
 }
 
 .aboutMe__heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 200px;
+  width: 100%;
   font-size: clamp(26px, 5vw, 32px);
   white-space: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20px;
   margin: 10px 0px 40px;
 }
 
@@ -357,17 +361,32 @@ a {
   font-family: "Space Mono", monospace;
   font-size: 15px;
   list-style-type: "› ";
+  margin-left: 20px;
+  margin-top: 8px;
 }
 
 @media (max-width: 1080px) {
   .aboutMe {
-    padding: 0px 90px;
+    padding: 0px 100px;
+  }
+  .aboutMe__heading::after {
+    width: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .aboutMe {
-    padding: 0px 45px;
+    padding: 0px 50px;
+  }
+  .aboutMe__heading::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .aboutMe__skillsUl {
+    -webkit-columns: 1;
+            columns: 1;
   }
 }
 
@@ -381,6 +400,40 @@ a {
           flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.projects__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+  font-size: clamp(26px, 5vw, 32px);
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 40px;
+}
+
+.projects__heading:before {
+  content: "02.";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3px 10px 0px 0px;
+  font-family: "Space Mono", monospace;
+  font-size: clamp(18px, 4vw, 23px);
+}
+
+.projects__heading:after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: 20px;
+  margin-top: clamp(4px, 1.2vw, 7px);
+  width: 300px;
+  height: 1px;
+  background-color: white;
 }
 
 .projects__list {

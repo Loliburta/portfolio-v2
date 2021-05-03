@@ -8,7 +8,7 @@ import { Contact } from "./contact/Contact";
 
 export const App = () => {
   return (
-    <div>
+    <div >
       <NavigationBar />
       <Socials />
       <Hero />

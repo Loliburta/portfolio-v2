@@ -1,16 +1,15 @@
 .aboutMe {
   display: flex;
   max-width: 900px;
-  margin: 0 auto;
   flex-direction: column;
-  padding: 0 45px;
+  margin: 0 auto;
+
   &__heading {
     display: flex;
-    min-width: 200px;
+    width: 100%;
     font-size: clamp(26px, 5vw, 32px);
     white-space: nowrap;
     align-items: center;
-    height: 20px;
     margin: 10px 0px 40px;
     &:before {
       content: "01.";
@@ -41,15 +40,29 @@
     font-family: "Space Mono", monospace;
     font-size: 15px;
     list-style-type: "› ";
+    margin-left: 20px;
+    margin-top: 8px;
   }
 }
 @media (max-width: 1080px) {
   .aboutMe {
-    padding: 0px 90px;
+    padding: 0px 100px;
   }
+  .aboutMe__heading::after{
+    width: 200px;
+  }
+
 }
 @media (max-width: 768px) {
   .aboutMe {
-    padding: 0px 45px;
+    padding: 0px 50px;
+  }
+  .aboutMe__heading::after{
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .aboutMe__skillsUl{
+    columns: 1;
   }
 }
