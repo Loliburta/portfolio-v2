@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
 ul {
   padding: 0;
-  margin: 0;
+  margin: 20px;
   list-style: none;
   list-style-type: none;
 }
@@ -146,7 +147,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  left: 55px;
+  left: 40px;
   bottom: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -183,11 +184,23 @@ a {
   background-color: white;
 }
 
+@media (max-width: 1080px) {
+  .socials {
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials {
+    display: none;
+  }
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   height: 100vh;
   -webkit-box-pack: center;
@@ -218,7 +231,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(30px, 6.7vw, 80px);
+  font-size: clamp(30px, 6.7vw, 70px);
   color: #ccd6f6;
   font-weight: 600;
   line-height: 110%;
@@ -228,7 +241,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(30px, 6.7vw, 80px);
+  font-size: clamp(30px, 6.7vw, 70px);
   color: #8892b0;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -264,6 +277,18 @@ a {
   color: #64ffda;
 }
 
+@media (max-width: 1080px) {
+  .hero {
+    padding: 0px 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0px 45px;
+  }
+}
+
 .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,6 +299,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 45px;
 }
 
 .aboutMe__heading {
@@ -295,7 +321,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2px 10px 0px 0px;
+  margin: 3px 10px 0px 0px;
   font-family: "Space Mono", monospace;
   font-size: clamp(18px, 4vw, 23px);
 }
@@ -319,12 +345,30 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 20px;
 }
 
 .aboutMe__skillsUl {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-columns: 2;
           columns: 2;
   font-family: "Space Mono", monospace;
+  font-size: 15px;
+  list-style-type: "› ";
+}
+
+@media (max-width: 1080px) {
+  .aboutMe {
+    padding: 0px 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMe {
+    padding: 0px 45px;
+  }
 }
 
 .projects {

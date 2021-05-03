@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   height: 100vh;
   justify-content: center;
@@ -18,14 +18,14 @@
   }
   &__name {
     display: flex;
-    font-size: clamp(30px, 6.7vw, 80px);
+    font-size: clamp(30px, 6.7vw, 70px);
     color: rgb(204, 214, 246);
     font-weight: 600;
     line-height: 110%;
   }
   &__catchphrase {
     display: flex;
-    font-size: clamp(30px, 6.7vw, 80px);
+    font-size: clamp(30px, 6.7vw, 70px);
     color: rgb(136, 146, 176);
     align-items: flex-start;
     font-weight: 600;
@@ -49,5 +49,15 @@
     border-radius: 3px;
     font-family: "Space Mono", monospace;
     color: rgb(100, 255, 218);
+  }
+}
+@media (max-width: 1080px) {
+  .hero {
+    padding: 0px 90px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 0px 45px;
   }
 }

@@ -3,6 +3,7 @@
   max-width: 900px;
   margin: 0 auto;
   flex-direction: column;
+  padding: 0 45px;
   &__heading {
     display: flex;
     min-width: 200px;
@@ -14,7 +15,7 @@
     &:before {
       content: "01.";
       display: flex;
-      margin: 2px 10px 0px 0px;
+      margin: 3px 10px 0px 0px;
       font-family: "Space Mono", monospace;
       font-size: clamp(18px, 4vw, 23px);
     }
@@ -32,9 +33,23 @@
   &__description {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
   }
   &__skillsUl {
+    align-items: center;
     columns: 2;
     font-family: "Space Mono", monospace;
+    font-size: 15px;
+    list-style-type: "› ";
+  }
+}
+@media (max-width: 1080px) {
+  .aboutMe {
+    padding: 0px 90px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutMe {
+    padding: 0px 45px;
   }
 }

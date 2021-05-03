@@ -1,7 +1,7 @@
 .socials {
   display: flex;
   position: fixed;
-  left: 55px;
+  left: 40px;
   bottom: 0px;
   flex-direction: column;
   z-index: 10;
@@ -22,5 +22,15 @@
     height: 90px;
     margin: 0px auto;
     background-color: white;
+  }
+}
+@media (max-width: 1080px) {
+  .socials {
+    left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .socials {
+    display: none;
   }
 }
