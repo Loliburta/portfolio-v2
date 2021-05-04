@@ -1,4 +1,4 @@
-import Logo from "../../icons/lgo.svg";
+import Logo from "../../icons/logo.svg";
 
 export const NavigationBar = () => {
   return (

@@ -1,33 +1,63 @@
-.contact {
+.contact--wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
-  margin: 0 auto;
-  &__heading {
+  width: 100%;
+  max-width: 100%;
+  background-color: #2A3342;
+  &__buildings {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    object-fit: cover;
     display: flex;
-    font-size: clamp(26px, 5vw, 32px);
-    justify-content: center;
+    background-color: #17171a;
+    transform: rotateX(180deg);
+    margin-bottom: -150px;
   }
-  &__description {
+  .contact {
     display: flex;
-    font-size: clamp(18px, 3.5vw, 20px);
-    justify-content: center;
-    text-align: center;
-  }
-  &__form {
-    display: flex;
-    width: clamp(200px, 50vw, 500px);
-    border: 2px solid green;
-  }
-  &__buttons {
-    display: flex;
-    font-family: "Space Mono", monospace;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px clamp(50px, 7vw, 70px);
+    position: relative;
+
+    &__heading {
+      padding-top: 200px;
+      display: flex;
+      font-size: clamp(40px, 5vw, 60px);
+      justify-content: center;
+      align-items: center;
+      padding-right: 43px;
+      font-weight: 600;
+      color: #ccd6f6;
+      &:before {
+        content: "03.";
+        display: flex;
+        margin-right: 10px;
+        margin-top: clamp(5px, 1.1vw, 15px);
+        font-family: "Space Mono", monospace;
+        font-size: clamp(18px, 4vw, 23px);
+        font-weight: 400;
+        color: rgb(100, 255, 218);
+      }
+    }
+    &__description {
+      display: flex;
+      font-size: clamp(18px, 3.5vw, 20px);
+      padding: 0px 10px;
+      justify-content: center;
+      text-align: center;
+    }
     &__button {
       display: flex;
-      padding: 10px;
-      border: 1px solid green;
+      padding: 15px 28px;
+      border: 1px solid rgb(100, 255, 218);
+      font-size: 15px;
       border-radius: 3px;
-      margin-right: 10px;
+      font-family: "Space Mono", monospace;
+      color: rgb(100, 255, 218);
+      margin: 0 auto;
     }
   }
 }
