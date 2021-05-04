@@ -48,3 +48,9 @@
 .project__image {
   grid-area: 1 / 1 / 2 / 8;
 }
+
+@media (max-width: 768px) {
+  .navBar__links {
+    display: none;
+  }
+}

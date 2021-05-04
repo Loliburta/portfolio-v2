@@ -11,9 +11,6 @@
   padding-left: clamp(50px, 7vw, 70px);
   padding-right: clamp(50px, 7vw, 70px);
 
-
-  
-
   &__greet {
     display: flex;
     font-size: clamp(14px, 5vw, 16px);
@@ -38,7 +35,6 @@
     justify-content: flex-start;
     line-height: 110%;
     margin-bottom: 22px;
-
   }
   &__description {
     display: flex;
@@ -58,18 +54,3 @@
     color: rgb(100, 255, 218);
   }
 }
-// @media (max-width: 1200px) {
-//   .hero {
-//     padding: 0px 90px;
-//   }
-// }
-// @media (max-width: 1080px) {
-//   .hero {
-//     padding: 0px 70px;
-//   }
-// }
-// @media (max-width: 768px) {
-//   .hero {
-//     padding: 0px 50px;
-//   }
-// }
