@@ -232,6 +232,12 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .navBar__menu--active {
+    display: none;
+  }
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
