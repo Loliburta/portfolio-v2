@@ -1,12 +1,13 @@
 //Fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
 
 //Other Scss
 @import "./components/App";
 @import "./components/navigationBar/NavigationBar";
 @import "./components/socials/Socials";
+@import "./components/mail/Mail";
 @import "./components/hero/Hero";
 @import "./components/aboutMe/AboutMe";
 @import "./components/projects/Projects";
