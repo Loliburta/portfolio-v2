@@ -14,7 +14,7 @@
     transform: rotateX(180deg);
     margin-bottom: -150px;
   }
-  .contact {
+  &__contact {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
@@ -58,6 +58,7 @@
       font-family: "Space Mono", monospace;
       color: rgb(100, 255, 218);
       margin: 0 auto;
+      cursor: pointer;
     }
   }
 }
