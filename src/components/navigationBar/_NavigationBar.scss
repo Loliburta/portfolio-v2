@@ -1,3 +1,13 @@
+.menu {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
 .navBar {
   display: flex;
   position: absolute;
@@ -8,7 +18,6 @@
   flex-wrap: wrap;
   font-family: "Space Mono", monospace;
   color: rgb(100, 255, 218);
-
   height: 100px;
   &__logo {
     display: flex;
@@ -35,6 +44,27 @@
       cursor: pointer;
     }
   }
+  &__menu {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    flex-direction: column;
+    top: 8vh;
+    background-color: red;
+    right: 0;
+    height: 92vh;
+    width: 250px;
+    outline: 0px;
+    z-index: 9;
+    transform: translateX(0%);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &__link {
+      display: flex;
+      padding: 3px 10px;
+      margin: 0px 5px;
+    }
+  }
 }
 .grid-container {
   display: grid;
@@ -52,5 +82,26 @@
 @media (max-width: 768px) {
   .navBar__links {
     display: none;
+  }
+  .navBar__menu {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+  }
+  .navBar__menu--active {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: green;
+    height: 92vh;
+    transform: translateX(100%);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 250px;
+    flex-direction: column;
+    z-index: 100;
   }
 }

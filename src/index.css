@@ -60,6 +60,17 @@ a {
   background: transparent;
 }
 
+.menu {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +132,39 @@ a {
   cursor: pointer;
 }
 
+.navBar__menu {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 8vh;
+  background-color: red;
+  right: 0;
+  height: 92vh;
+  width: 250px;
+  outline: 0px;
+  z-index: 9;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.navBar__menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px 10px;
+  margin: 0px 5px;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -150,6 +194,41 @@ a {
 @media (max-width: 768px) {
   .navBar__links {
     display: none;
+  }
+  .navBar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navBar__menu--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: green;
+    height: 92vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 100;
   }
 }
 
