@@ -1,13 +1,3 @@
-.menu {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  width: 20px;
-  height: 20px;
-  font-size: 15px;
-  cursor: pointer;
-}
 .navBar {
   display: flex;
   position: absolute;
@@ -23,6 +13,15 @@
     display: flex;
     display: flex;
     width: 50px;
+  }
+  &__hamburger {
+    position: absolute;
+    top: 23px;
+    right: 41px;
+    display: none;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 10;
   }
   &__links {
     display: flex;
@@ -44,33 +43,21 @@
       cursor: pointer;
     }
   }
-  &__menu {
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
+  &__menu--active {
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
     top: 8vh;
-    background-color: red;
     right: 0;
-    height: 92vh;
     width: 250px;
-    outline: 0px;
-    z-index: 9;
+    height: 92vh;
+    background-color: red;
+    z-index: 5;
     transform: translateX(0%);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    &__link {
-      display: flex;
-      padding: 3px 10px;
-      margin: 0px 5px;
-    }
   }
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
 }
 .project__content {
   grid-area: 1 / 5 / 2 / 12;
@@ -84,29 +71,33 @@
     display: none;
   }
   .navBar__menu {
+    display: none;
+  }
+  .navBar__hamburger {
     display: flex;
   }
-  .menu {
+  .navBar__menu {
     display: flex;
-  }
-  .navBar__menu--active {
-    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
     bottom: 0;
     right: 0;
-    align-items: center;
-    justify-content: space-around;
     background-color: green;
-    height: 92vh;
-    transform: translateX(100%);
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     width: 250px;
-    flex-direction: column;
-    z-index: 100;
+    height: 92vh;
+    z-index: 5;
+    transform: translateX(100vw);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
 @media (min-width: 768px) {
   .navBar__menu--active {
     display: none;
   }
+  .navBar__menu {
+    display: none;
+  }
 }
+

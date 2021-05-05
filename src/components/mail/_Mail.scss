@@ -5,7 +5,9 @@
   position: fixed;
   right: 35px;
   bottom: 0px;
+  width: 19px;
   z-index: 10;
+  flex-wrap: nowrap;
   &__text {
     display: flex;
     font-size: 12px;

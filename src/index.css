@@ -60,17 +60,6 @@ a {
   background: transparent;
 }
 
-.menu {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  width: 20px;
-  height: 20px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +86,16 @@ a {
   display: flex;
   display: flex;
   width: 50px;
+}
+
+.navBar__hamburger {
+  position: absolute;
+  top: 23px;
+  right: 41px;
+  display: none;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .navBar__links {
@@ -132,47 +131,30 @@ a {
   cursor: pointer;
 }
 
-.navBar__menu {
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: fixed;
+.navBar__menu--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
   top: 8vh;
-  background-color: red;
   right: 0;
-  height: 92vh;
   width: 250px;
-  outline: 0px;
-  z-index: 9;
+  height: 92vh;
+  background-color: red;
+  z-index: 5;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.navBar__menu__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 3px 10px;
-  margin: 0px 5px;
-}
-
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 0px 0px;
 }
 
 .project__content {
@@ -196,44 +178,45 @@ a {
     display: none;
   }
   .navBar__menu {
+    display: none;
+  }
+  .navBar__hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .menu {
+  .navBar__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .navBar__menu--active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    background-color: green;
-    height: 92vh;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 250px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    z-index: 100;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: green;
+    width: 250px;
+    height: 92vh;
+    z-index: 5;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
 
 @media (min-width: 768px) {
   .navBar__menu--active {
+    display: none;
+  }
+  .navBar__menu {
     display: none;
   }
 }
@@ -303,7 +286,10 @@ a {
   position: fixed;
   right: 35px;
   bottom: 0px;
+  width: 19px;
   z-index: 10;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .mail__text {
@@ -820,7 +806,7 @@ a {
   border-radius: 5px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1088px) {
   .otherProjects__projects__item {
     width: clamp(300px, 40.26vw, 400px);
   }
