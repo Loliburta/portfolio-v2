@@ -9,15 +9,17 @@ import { Contact } from "./contact/Contact";
 
 export const App = () => {
   return (
-    <div>
+    <>
       <NavigationBar />
-      <Socials />
-      <Mail />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <OtherProjects />
-      <Contact />
-    </div>
+      <div id="wrapper">
+        <Socials />
+        <Mail />
+        <Hero />
+        <AboutMe />
+        <Projects />
+        <OtherProjects />
+        <Contact />
+      </div>
+    </>
   );
 };

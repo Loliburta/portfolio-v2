@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+#wrapper {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
 p {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -145,11 +150,14 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 8vh;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  top: 0;
+  bottom: 0;
   right: 0;
-  width: 250px;
-  height: 92vh;
-  background-color: red;
+  width: calc(min(75vw, 400px));
+  height: 100vh;
+  background-color: #112240;
   z-index: 5;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -201,7 +209,7 @@ a {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: green;
+    background-color: #112240;
     width: 250px;
     height: 92vh;
     z-index: 5;
