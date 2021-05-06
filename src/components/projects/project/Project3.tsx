@@ -1,6 +1,6 @@
 import img3 from "../../../images/cointracker.jpg";
 import { Icon } from "@iconify/react";
-import githubIcon from '@iconify-icons/codicon/github-alt';
+import githubIcon from "@iconify-icons/codicon/github-alt";
 import externalIcon from "@iconify-icons/gridicons/external";
 
 export const Project3 = () => {
@@ -14,16 +14,19 @@ export const Project3 = () => {
           Crypto Price Tracker
         </div>
         <div className="projects__list__item__content__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
+          A web app created for tracking daily and weekly changes of any
+          cryptocurrencies, you can search for your favorite crypto or scroll
+          over the list.
         </div>
         <div className="projects__list__item__content__tech">
           <div className="projects__list__item__content__tech__item">React</div>
           <div className="projects__list__item__content__tech__item">
             Typescript
           </div>
-          <div className="projects__list__item__content__tech__item">SCSS</div>
+          <div className="projects__list__item__content__tech__item">Sass</div>
+          <div className="projects__list__item__content__tech__item">
+            CoinGecko API
+          </div>
         </div>
         <div className="projects__list__item__content__links">
           <div className="projects__list__item__content__links__icon">

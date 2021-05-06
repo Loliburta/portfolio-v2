@@ -1,7 +1,7 @@
 import img2 from "../../../images/weatherapp.jpg";
 
 import { Icon } from "@iconify/react";
-import githubIcon from '@iconify-icons/codicon/github-alt';
+import githubIcon from "@iconify-icons/codicon/github-alt";
 import externalIcon from "@iconify-icons/gridicons/external";
 
 export const Project2 = () => {
@@ -11,27 +11,32 @@ export const Project2 = () => {
         <div className="projects__list__item__content__overline">
           Featured Project
         </div>
-        <div className="projects__list__item__content__title">
-          Crypto Price Tracker
-        </div>
+        <div className="projects__list__item__content__title">Weather App</div>
         <div className="projects__list__item__content__description description--flipped">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
+          A nicer look at today's weather and forecast for the next few days
+          with several animations and great looking backgrounds. Check out the
+          weather of any place on earth using your native language.
         </div>
         <div className="projects__list__item__content__tech ">
-          <div className="projects__list__item__content__tech__item item--flipped">React</div>
           <div className="projects__list__item__content__tech__item item--flipped">
-            Typescript
+            React
           </div>
-          <div className="projects__list__item__content__tech__item item--flipped">SCSS</div>
+          <div className="projects__list__item__content__tech__item item--flipped">
+           Sass
+          </div>
+          <div className="projects__list__item__content__tech__item item--flipped">
+           Gsap 3
+          </div>
+          <div className="projects__list__item__content__tech__item item--flipped">
+           OpenWeatherMap API
+          </div>
         </div>
         <div className="projects__list__item__content__links">
           <div className="projects__list__item__content__links__icon">
-            <Icon icon={githubIcon} height="22px" color="#CCD6EB"  />
+            <Icon icon={githubIcon} height="22px" color="#CCD6EB" />
           </div>
           <div className="projects__list__item__content__links__icon">
-            <Icon icon={externalIcon} height="25px" color="#CCD6EB"  />
+            <Icon icon={externalIcon} height="25px" color="#CCD6EB" />
           </div>
         </div>
       </div>

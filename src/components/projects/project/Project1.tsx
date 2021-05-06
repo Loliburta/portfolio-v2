@@ -1,6 +1,6 @@
 import img1 from "../../../images/movies.jpg";
 import { Icon } from "@iconify/react";
-import githubIcon from '@iconify-icons/codicon/github-alt';
+import githubIcon from "@iconify-icons/codicon/github-alt";
 import externalIcon from "@iconify-icons/gridicons/external";
 
 export const Project1 = () => {
@@ -14,15 +14,21 @@ export const Project1 = () => {
           Movies Search
         </div>
         <div className="projects__list__item__content__description">
-          A site where you can check out any movie, display it's rating cast
-          etc.where you can check out any movie, display it's rating cast where 
+          A site where you can check out any movie, display it's rating cast and
+          overview. Sort by most popular, top rated and see the upcoming movies.
         </div>
         <div className="projects__list__item__content__tech">
           <div className="projects__list__item__content__tech__item">React</div>
           <div className="projects__list__item__content__tech__item">
             Typescript
           </div>
-          <div className="projects__list__item__content__tech__item">SCSS</div>
+          <div className="projects__list__item__content__tech__item">Sass</div>
+          <div className="projects__list__item__content__tech__item">
+            TheMovieDB API
+          </div>
+          <div className="projects__list__item__content__tech__item">
+            Lodash
+          </div>
         </div>
         <div className="projects__list__item__content__links">
           <div className="projects__list__item__content__links__icon">
