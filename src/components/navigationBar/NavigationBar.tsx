@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from "react";
+import { useWindowWidth } from "@react-hook/window-size";
 import Logo from "../../icons/logo.svg";
 import { Squash as Hamburger } from "hamburger-react";
 export const NavigationBar = () => {
+  const screenWidth = useWindowWidth();
   const [isOpen, setOpen] = useState(false);
   const navbar = useRef(null);
 
@@ -20,6 +22,11 @@ export const NavigationBar = () => {
   };
   useOutsideAlerter(navbar);
 
+  useEffect(() => {
+    if (screenWidth > 768) {
+      setOpen(false);
+    }
+  }, [screenWidth]);
   useEffect(() => {
     const wrapper = document.getElementById("wrapper");
     if (isOpen) {

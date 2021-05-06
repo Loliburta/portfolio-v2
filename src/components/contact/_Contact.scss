@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 100%;
-  background-color: #2A3342;
+  background-color: #2a3342;
   &__buildings {
     max-width: 100%;
     margin: 0 auto;
@@ -29,16 +29,18 @@
       justify-content: center;
       align-items: center;
       padding-right: 43px;
-      font-weight: 600;
+      font-weight: 500;
       color: #ccd6f6;
+      align-items: flex-end;
       &:before {
         content: "03.";
         display: flex;
         margin-right: 10px;
-        margin-top: clamp(5px, 1.1vw, 15px);
         font-family: "Space Mono", monospace;
-        font-size: clamp(18px, 4vw, 23px);
+        font-size: clamp(18px, 3vw, 23px);
         font-weight: 400;
+        justify-content: flex-end;
+        line-height: clamp(53px, 6.8vw, 77px);
         color: rgb(100, 255, 218);
       }
     }

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://loliburta.github.io/portfolio-v2/",
   "dependencies": {
+    "@react-hook/window-size": "^3.0.7",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -49,6 +50,7 @@
   "devDependencies": {
     "@iconify-icons/akar-icons": "^1.1.9",
     "@iconify-icons/bx": "^1.1.0",
+    "@iconify-icons/codicon": "^1.1.14",
     "@iconify-icons/eva": "^1.1.0",
     "@iconify-icons/gridicons": "^1.1.1",
     "@iconify/react": "^1.1.4"

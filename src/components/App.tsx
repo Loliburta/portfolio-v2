@@ -11,9 +11,9 @@ export const App = () => {
   return (
     <>
       <NavigationBar />
+      <Socials />
+      <Mail />
       <div id="wrapper">
-        <Socials />
-        <Mail />
         <Hero />
         <AboutMe />
         <Projects />
