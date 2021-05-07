@@ -30,10 +30,10 @@ export const Project3 = () => {
         </div>
         <div className="projects__list__item__content__links">
           <div className="projects__list__item__content__links__icon">
-            <Icon icon={githubIcon} height="22px" color="#CCD6EB" />
+            <Icon icon={githubIcon} height="22px" color="#ccd6f6" />
           </div>
           <div className="projects__list__item__content__links__icon">
-            <Icon icon={externalIcon} height="25px" color="#CCD6EB" />
+            <Icon icon={externalIcon} height="25px" color="#ccd6f6" />
           </div>
         </div>
       </div>

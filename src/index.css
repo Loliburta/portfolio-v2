@@ -268,7 +268,7 @@ a {
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: white;
+  background-color: #a8b2d1;
 }
 
 @media (max-width: 1080px) {
@@ -311,6 +311,7 @@ a {
   margin-bottom: 25px;
   letter-spacing: 1.2px;
   cursor: pointer;
+  color: #a8b2d1;
 }
 
 .mail:after {
@@ -319,7 +320,7 @@ a {
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: white;
+  background-color: #a8b2d1;
 }
 
 @media (max-width: 1080px) {
@@ -467,7 +468,7 @@ a {
   margin-top: clamp(4px, 1.2vw, 7px);
   width: 300px;
   height: 1px;
-  background-color: white;
+  background-color: #233554;
 }
 
 .aboutMe__description {
@@ -561,7 +562,7 @@ a {
   margin-top: clamp(4px, 1.2vw, 7px);
   width: 300px;
   height: 1px;
-  background-color: white;
+  background-color: #233554;
 }
 
 .projects__list {
@@ -627,6 +628,7 @@ a {
   padding: 25px;
   text-align: right;
   font-size: 18px;
+  border-radius: 4px;
   color: #a8b2d1;
 }
 
@@ -816,6 +818,7 @@ a {
   text-align: center;
   font-weight: 500;
   color: #ccd6f6;
+  margin-bottom: 5px;
 }
 
 .otherProjects__github {
@@ -825,6 +828,32 @@ a {
 }
 
 .otherProjects__projects {
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+}
+
+.otherProjects__projects__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 30px 25px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.otherProjects__projects__item__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,29 +861,83 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.otherProjects__projects__item__top__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.otherProjects__projects__item__top__links__icon--external {
+  margin-left: 13px;
+}
+
+.otherProjects__projects__item__mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.otherProjects__projects__item__mid__title {
+  font-size: 22px;
+}
+
+.otherProjects__projects__item__mid__description {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.otherProjects__projects__item__bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.otherProjects__projects__item__bot__tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.otherProjects__projects__item {
-  background-color: #473232;
-  width: 310px;
-  margin: 10px 5px;
-  height: 350px;
-  border-radius: 5px;
+.otherProjects__projects__item__bot__tech__item {
+  margin-right: 15px;
 }
 
-@media (max-width: 1088px) {
-  .otherProjects__projects__item {
-    width: clamp(300px, 40.26vw, 400px);
+@media (max-width: 1080px) {
+  .otherProjects__projects {
+    -ms-grid-columns: (minmax(270px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
-  .otherProjects__projects__item {
-    width: clamp(300px, 70vw, 500px);
+  .otherProjects__projects {
+    -ms-grid-columns: (minmax(210px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   }
 }
 

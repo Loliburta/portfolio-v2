@@ -22,21 +22,21 @@ export const Project2 = () => {
             React
           </div>
           <div className="projects__list__item__content__tech__item item--flipped">
-           Sass
+            Sass
           </div>
           <div className="projects__list__item__content__tech__item item--flipped">
-           Gsap 3
+            Gsap 3
           </div>
           <div className="projects__list__item__content__tech__item item--flipped">
-           OpenWeatherMap API
+            OpenWeatherMap API
           </div>
         </div>
         <div className="projects__list__item__content__links">
           <div className="projects__list__item__content__links__icon">
-            <Icon icon={githubIcon} height="22px" color="#CCD6EB" />
+            <Icon icon={githubIcon} height="22px" color="#ccd6f6" />
           </div>
           <div className="projects__list__item__content__links__icon">
-            <Icon icon={externalIcon} height="25px" color="#CCD6EB" />
+            <Icon icon={externalIcon} height="25px" color="#ccd6f6" />
           </div>
         </div>
       </div>

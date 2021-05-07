@@ -14,6 +14,7 @@
     margin-bottom: 25px;
     letter-spacing: 1.2px;
     cursor: pointer;
+    color: #a8b2d1;
   }
   &:after {
     content: "";
@@ -21,7 +22,7 @@
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: white;
+    background-color: #a8b2d1;
   }
 }
 @media (max-width: 1080px) {

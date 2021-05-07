@@ -9,6 +9,7 @@
     text-align: center;
     font-weight: 500;
     color: #ccd6f6;
+    margin-bottom: 5px;
   }
   &__github {
     font-size: 14px;
@@ -16,26 +17,70 @@
     font-family: "Space Mono", monospace;
   }
   &__projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
     &__item {
-      background-color: rgb(71, 50, 50);
-      width: 310px;
-      margin: 10px 5px;
+      display: flex;
+      flex-direction: column;
+      // background-color: rgb(17, 34, 64);
+      background-color: white;
+      padding: 30px 25px;
       height: 350px;
       border-radius: 5px;
+      &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__links {
+          display: flex;
+          &__icon--external {
+            margin-left: 13px;
+          }
+        }
+      }
+      &__mid {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        &__title {
+          font-size: 22px;
+        }
+        &__description {
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+      &__bot {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        &__tech {
+          display: flex;
+          flex-direction: row;
+          font-family: "Space Mono", monospace;
+          font-size: 13px;
+          flex-wrap: wrap;
+          &__item {
+            margin-right: 15px;
+          }
+        }
+      }
     }
   }
 }
-@media (max-width: 1088px) {
-  .otherProjects__projects__item {
-    width: clamp(300px, 40.26vw, 400px);
+@media (max-width: 1080px) {
+  .otherProjects__projects {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   }
 }
 @media (max-width: 768px) {
-  .otherProjects__projects__item {
-    width: clamp(300px, 70vw, 500px);
+  .otherProjects__projects {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   }
 }
