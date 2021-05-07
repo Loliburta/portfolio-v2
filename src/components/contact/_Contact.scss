@@ -19,16 +19,17 @@
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 100px clamp(50px, 7vw, 70px);
+    padding: 0px clamp(50px, 7vw, 70px) 150px clamp(50px, 7vw, 70px);
     position: relative;
 
     &__heading {
-      padding-top: 200px;
       display: flex;
+      padding-top: 200px;
+      padding-right: 43px;
+      padding-bottom: 10px;
       font-size: clamp(40px, 5vw, 60px);
       justify-content: center;
       align-items: center;
-      padding-right: 43px;
       font-weight: 500;
       color: #ccd6f6;
       align-items: flex-end;
@@ -47,7 +48,7 @@
     &__description {
       display: flex;
       font-size: clamp(18px, 3.5vw, 20px);
-      padding: 0px 10px;
+      padding: 0px 10px 50px 10px;
       justify-content: center;
       text-align: center;
     }
@@ -62,5 +63,14 @@
       margin: 0 auto;
       cursor: pointer;
     }
+  }
+}
+@media (max-width: 480px) {
+  .contact--wrapper__contact__description {
+    font-size: 18px;
+    padding: 0px;
+  }
+  .contact--wrapper__contact {
+    padding: 60px 10px;
   }
 }

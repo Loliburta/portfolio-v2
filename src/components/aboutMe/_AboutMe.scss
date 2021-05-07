@@ -59,6 +59,11 @@
     width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .aboutMe {
+    padding: 60px 10px;
+  }
+}
 @media (max-width: 360px) {
   .aboutMe__skillsUl {
     columns: 1;

@@ -27,8 +27,7 @@
     &__item {
       display: flex;
       flex-direction: column;
-      // background-color: rgb(17, 34, 64);
-      background-color: white;
+      background-color: rgb(19, 28, 46);
       padding: 30px 25px;
       height: 350px;
       border-radius: 5px;
@@ -50,6 +49,7 @@
         margin-top: 25px;
         &__title {
           font-size: 22px;
+          margin-bottom: 10px;
         }
         &__description {
           font-size: 17px;
@@ -82,5 +82,10 @@
 @media (max-width: 768px) {
   .otherProjects__projects {
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .otherProjects {
+    padding: 60px 10px;
   }
 }
