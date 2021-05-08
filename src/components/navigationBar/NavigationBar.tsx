@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 import { useWindowWidth } from "@react-hook/window-size";
-import Logo from "../../icons/logo.svg";
 import { Squash as Hamburger } from "hamburger-react";
+import Logo from "../../icons/logo.svg";
 export const NavigationBar = () => {
   const screenWidth = useWindowWidth();
   const [isOpen, setOpen] = useState(false);
@@ -45,15 +46,39 @@ export const NavigationBar = () => {
         <Hamburger toggled={isOpen} toggle={setOpen} />
       </div>
       <div className="navBar__links">
-        <div className="navBar__links__link">01. About</div>
-        <div className="navBar__links__link">02. Projects</div>
-        <div className="navBar__links__link">03. Contact</div>
+        <Link to="aboutMe" spy={true} smooth={true} duration={300}>
+          <div className="navBar__links__link">
+            <strong className="mr-8">01.</strong> About
+          </div>
+        </Link>
+        <Link to="projects" spy={true} smooth={true} duration={350}>
+          <div className="navBar__links__link">
+            <strong className="mr-8">02.</strong> Projects
+          </div>
+        </Link>
+        <Link to="contact" spy={true} smooth={true} duration={550}>
+          <div className="navBar__links__link">
+            <strong className="mr-8">03.</strong> Contact
+          </div>
+        </Link>
         <div className="navBar__links__resume">Resume</div>
       </div>
       <div className={isOpen ? "navBar__menu--active" : "navBar__menu"}>
-        <div className="navBar__menu__link">01. About</div>
-        <div className="navBar__menu__link">02. Projects</div>
-        <div className="navBar__menu__link">03. Contact</div>
+        <Link to="aboutMe" spy={true} smooth={true} duration={300}>
+          <div className="navBar__menu__link">
+            <strong className="mr-8">01.</strong> About
+          </div>
+        </Link>
+        <Link to="projects" spy={true} smooth={true} duration={300}>
+          <div className="navBar__menu__link">
+            <strong className="mr-8">02.</strong> Projects
+          </div>
+        </Link>
+        <Link to="contact" spy={true} smooth={true} duration={300}>
+          <div className="navBar__menu__link">
+            <strong className="mr-8">03.</strong> Contact
+          </div>
+        </Link>
         <div className="navBar__menu__resume">Resume</div>
       </div>
     </div>

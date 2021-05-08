@@ -1,4 +1,12 @@
-#wrapper{
+strong {
+  font-weight: 400;
+  color: #64ffda;
+}
+.mr-8{
+  margin-right: 8px;
+}
+
+#wrapper {
   transition: all 0.25s;
 }
 p {

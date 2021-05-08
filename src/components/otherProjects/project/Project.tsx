@@ -49,7 +49,10 @@ export const Project: React.FC<Props> = ({
         <div className="otherProjects__projects__item__bot__tech">
           {tech.map((name) => {
             return (
-              <div className="otherProjects__projects__item__bot__tech__item">
+              <div
+                key={name}
+                className="otherProjects__projects__item__bot__tech__item"
+              >
                 {name}
               </div>
             );

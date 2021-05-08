@@ -2,18 +2,17 @@
   display: flex;
   flex-direction: column;
   max-width: 1100px;
-  margin: 0 auto;
   padding: 100px clamp(50px, 7vw, 70px);
+  margin: 0 auto;
   &__heading {
     display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 10px 0px 40px;
     min-width: 200px;
     font-size: clamp(26px, 5vw, 32px);
     font-weight: 500;
-    white-space: nowrap;
-    align-items: center;
-    margin: 10px 0px 40px;
     color: #ccd6f6;
-
     &:before {
       content: "02.";
       display: flex;
@@ -27,8 +26,8 @@
       content: "";
       display: block;
       position: relative;
-      margin-left: 20px;
       margin-top: clamp(4px, 1.2vw, 7px);
+      margin-left: 20px;
       width: 300px;
       height: 1px;
       background-color: #233554;
@@ -44,45 +43,43 @@
       gap: 0px 0px;
       margin-bottom: 100px;
       &__content {
-        width: 100%;
-        grid-area: 1 / 7 / 2 / 13;
         display: flex;
+        grid-area: 1 / 7 / 2 / 13;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+        width: 100%;
         z-index: 10;
         &__overline {
           display: flex;
-          text-align: right;
-          font-size: 13px;
-          font-family: "Space Mono", monospace;
-          color: rgb(100, 255, 218);
           margin-bottom: 5px;
+          text-align: right;
+          font-family: "Space Mono", monospace;
+          font-size: 13px;
+          color: rgb(100, 255, 218);
         }
         &__title {
           display: flex;
+          margin-bottom: 20px;
           font-size: clamp(24px, 5vw, 28px);
           color: rgb(204, 214, 246);
-          margin-bottom: 20px;
         }
         &__description {
-          background-color: rgba(2, 12, 27, 0.7);
           padding: 25px;
           text-align: right;
           font-size: 18px;
           border-radius: 4px;
           color: rgb(168, 178, 209);
+          background-color: rgba(2, 12, 27, 0.7);
         }
         &__tech {
           display: flex;
           flex-direction: row;
-          font-family: "Space Mono", monospace;
-          color: rgb(168, 178, 209);
-          margin-top: 20px;
-          margin-bottom: 10px;
-          font-size: 13px;
-          margin-right: -3px;
           flex-wrap: wrap;
+          margin: 20px -3px 10px 0px;
+          font-family: "Space Mono", monospace;
+          font-size: 13px;
+          color: rgb(168, 178, 209);
           &__item {
             display: flex;
             padding: 0px 5px 0px 0px;
@@ -92,9 +89,9 @@
         &__links {
           display: flex;
           flex-direction: row;
+          justify-content: space-between;
           align-items: flex-end;
           width: 63px;
-          justify-content: space-between;
           &__icon {
             display: flex;
             cursor: pointer;
@@ -102,10 +99,10 @@
         }
       }
       &__imageDiv {
-        grid-area: 1 / 1 / 2 / 8;
         display: flex;
-        align-items: center;
+        grid-area: 1 / 1 / 2 / 8;
         justify-content: center;
+        align-items: center;
         &__img {
           width: 100%;
         }
@@ -144,11 +141,11 @@
   .projects__list__item {
     margin-bottom: 70px;
   }
-  .projects__list__item__content {
-    padding: 40px 30px;
-  }
   .projects_.projects__heading::after {
     width: 100%;
+  }
+  .projects__list__item__content {
+    padding: 40px 30px;
   }
   .projects__list__item__content,
   .projects__list__item__imageDiv {
@@ -162,18 +159,17 @@
   .projects__list__item__content__description,
   .projects__list__item__content__tech,
   .projects__list__item__content__links {
-    text-align: left;
-    width: 100%;
     padding-left: 0px;
     padding-right: 0px;
+    width: 100%;
+    text-align: left;
     background-color: transparent;
   }
   .projects__list__item__content__links {
     width: 63px;
   }
   .projects__list__item__content__tech__item {
-    margin-left: 0;
-    margin-right: 10px;
+    margin: 0px 10px 0px 0px;
   }
   .projects__list__item__imageDiv__img {
     object-fit: cover;
@@ -182,7 +178,7 @@
   }
 }
 @media (max-width: 480px) {
-  .projects{
+  .projects {
     padding: 60px 10px;
   }
   .projects__list__item {

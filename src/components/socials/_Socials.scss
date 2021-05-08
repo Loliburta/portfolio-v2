@@ -1,9 +1,9 @@
 .socials {
   display: flex;
+  flex-direction: column;
   position: fixed;
   left: 35px;
   bottom: 0px;
-  flex-direction: column;
   z-index: 10;
   &__icons {
     display: flex;
@@ -18,9 +18,9 @@
   &:after {
     content: "";
     display: block;
+    margin: 0px auto;
     width: 1px;
     height: 90px;
-    margin: 0px auto;
     background-color: #a8b2d1;
   }
 }

@@ -1,27 +1,27 @@
 .mail {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   position: fixed;
   right: 35px;
   bottom: 0px;
   width: 19px;
   z-index: 10;
-  flex-wrap: nowrap;
   &__text {
     display: flex;
+    margin-bottom: 25px;
     font-size: 12px;
     writing-mode: vertical-rl;
-    margin-bottom: 25px;
+    color: #a8b2d1;
     letter-spacing: 1.2px;
     cursor: pointer;
-    color: #a8b2d1;
   }
   &:after {
     content: "";
     display: block;
+    margin: 0px auto;
     width: 1px;
     height: 90px;
-    margin: 0px auto;
     background-color: #a8b2d1;
   }
 }

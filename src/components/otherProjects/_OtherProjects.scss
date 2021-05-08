@@ -1,35 +1,35 @@
 .otherProjects {
   display: flex;
   flex-direction: column;
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 100px clamp(50px, 7vw, 60px);
+  margin: 0 auto;
+  max-width: 1100px;
   &__heading {
-    font-size: clamp(24px, 5vw, 32px);
-    text-align: center;
-    font-weight: 500;
-    color: #ccd6f6;
     margin-bottom: 5px;
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 500;
+    text-align: center;
+    color: #ccd6f6;
   }
   &__github {
+    font-family: "Space Mono", monospace;
     font-size: 14px;
     text-align: center;
-    font-family: "Space Mono", monospace;
   }
   &__projects {
-    list-style: none;
-    padding: 0px;
-    margin: 50px 0px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
+    padding: 0px;
+    margin: 50px 0px 0px;
     position: relative;
+    list-style: none;
     &__item {
       display: flex;
       flex-direction: column;
-      background-color: rgb(19, 28, 46);
       padding: 30px 25px;
       height: 350px;
+      background-color: rgb(19, 28, 46);
       border-radius: 5px;
       &__top {
         display: flex;
@@ -48,8 +48,8 @@
         flex-direction: column;
         margin-top: 25px;
         &__title {
-          font-size: 22px;
           margin-bottom: 10px;
+          font-size: 22px;
         }
         &__description {
           font-size: 17px;
@@ -58,14 +58,14 @@
       }
       &__bot {
         display: flex;
-        height: 100%;
         align-items: flex-end;
+        height: 100%;
         &__tech {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           font-family: "Space Mono", monospace;
           font-size: 13px;
-          flex-wrap: wrap;
           &__item {
             margin-right: 15px;
           }
