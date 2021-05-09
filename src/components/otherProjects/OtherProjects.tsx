@@ -57,7 +57,7 @@ export const OtherProjects = () => {
 
         <Project
           title="Backup Allegro"
-          description="A python script used for gathering all user's auction on allegro and saving them to local nosql database with images"
+          description="A python script used for gathering all user's auction from allegro and saving them to local nosql database with images"
           tech={["Python", "Allegro API", "OOP"]}
           code="https://github.com/Loliburta/Backup_allegro_auctions"
         />

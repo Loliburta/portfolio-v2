@@ -6,8 +6,10 @@ import { AboutMe } from "./aboutMe/AboutMe";
 import { Projects } from "./projects/Projects";
 import { OtherProjects } from "./otherProjects/OtherProjects";
 import { Contact } from "./contact/Contact";
+import { Animations } from "../animations/Animations";
 
 export const App = () => {
+  Animations();
   return (
     <>
       <NavigationBar />

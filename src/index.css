@@ -156,7 +156,8 @@ a {
   color: #ccd6f6;
 }
 
-.navBar__menu--active,
+.navBar__menu, .navBar__menu--active,
+.navBar--active__menu,
 .navBar--active__menu--active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,6 +251,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 100px 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -260,11 +262,14 @@ a {
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    top: 0;
     bottom: 0;
     right: 0;
+    width: calc(min(75vw, 400px));
+    height: 100vh;
     background-color: #112240;
-    width: 250px;
-    height: 92vh;
     z-index: 5;
     color: #ccd6f6;
     -webkit-transform: translateX(100vw);
@@ -275,10 +280,8 @@ a {
 }
 
 @media (min-width: 769px) {
+  .navBar__menu,
   .navBar__menu--active {
-    display: none;
-  }
-  .navBar__menu {
     display: none;
   }
 }

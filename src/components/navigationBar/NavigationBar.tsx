@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { animateScroll, Link } from "react-scroll";
 import { useWindowWidth } from "@react-hook/window-size";
 import { Squash as Hamburger } from "hamburger-react";
-import Logo from "../../icons/logo.svg";
+import { useClickOutside } from "../../hooks/useClickOutside";
+import Logo from "../../svg/logo.svg";
 export const NavigationBar = () => {
   const screenWidth = useWindowWidth();
   const [isOpen, setOpen] = useState(false);
@@ -16,20 +17,7 @@ export const NavigationBar = () => {
     setOpen(false);
   };
 
-  const CloseMenuOnOutsideClick = (ref: React.MutableRefObject<any>) => {
-    useEffect(() => {
-      const handleClickOutside = (event: MouseEvent) => {
-        if (ref.current && !ref.current.contains(event.target)) {
-          setOpen(false);
-        }
-      };
-      window.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        window.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [ref]);
-  };
-  CloseMenuOnOutsideClick(menu);
+  useClickOutside(menu, setOpen);
 
   useEffect(() => {
     if (screenWidth > 768) {
@@ -76,7 +64,7 @@ export const NavigationBar = () => {
             duration={300}
             onSetActive={closeMenu}
           >
-            <div className="navBar__links__link">
+            <div className="navBar__links__link" id="nav__about">
               <strong className="mr-8">01.</strong> About
             </div>
           </Link>
@@ -87,7 +75,7 @@ export const NavigationBar = () => {
             duration={350}
             onSetActive={closeMenu}
           >
-            <div className="navBar__links__link">
+            <div className="navBar__links__link" id="nav__projects">
               <strong className="mr-8">02.</strong> Projects
             </div>
           </Link>
@@ -98,11 +86,13 @@ export const NavigationBar = () => {
             duration={550}
             onSetActive={closeMenu}
           >
-            <div className="navBar__links__link">
+            <div className="navBar__links__link" id="nav__contact">
               <strong className="mr-8">03.</strong> Contact
             </div>
           </Link>
-          <div className="navBar__links__resume">Resume</div>
+          <div className="navBar__links__resume" id="nav__resume">
+            Resume
+          </div>
         </div>
         <div className={isOpen ? "navBar__menu--active" : "navBar__menu"}>
           <Link
