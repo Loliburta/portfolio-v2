@@ -9,6 +9,7 @@ interface Props {
   tech: string[];
   code: string;
   site: string;
+  id: string;
 }
 
 export const ProjectNormal: React.FC<Props> = ({
@@ -18,9 +19,10 @@ export const ProjectNormal: React.FC<Props> = ({
   tech,
   code,
   site,
+  id,
 }) => {
   return (
-    <li className="projects__list__item">
+    <li className="projects__list__item" id={id ? id : ""}>
       <div className="projects__list__item__content">
         <div className="projects__list__item__content__overline">
           Featured Project

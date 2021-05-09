@@ -15,8 +15,9 @@ export const OtherProjects = () => {
         <Project
           title="Spotify Player"
           description="An app with server authentication that connects to spotify API, you can search for any song or any artist's songs and play them"
-          tech={["Typescript", "React", "Node.js", "Express"]}
+          tech={["Typescript", "React", "Express", "Spotify API"]}
           code="https://github.com/Loliburta/Spotify_Player"
+          id="op1"
         />
         {/* Project 2 */}
 
@@ -25,6 +26,7 @@ export const OtherProjects = () => {
           description="A bot made for streamer so her viewers can gamble points on discord and withdraw them to twitch and claim special prizes"
           tech={["Javascript", "MongoDB", "Discord.js", "tmi.js"]}
           code="https://github.com/Loliburta/discord_bot"
+          id="op2"
         />
         {/* Project 3 */}
 
@@ -34,6 +36,7 @@ export const OtherProjects = () => {
           tech={["Typescript", "React", "Google API", "Nasa API"]}
           code="https://github.com/Loliburta/Natural_Hazards_Map"
           site="https://loliburta.github.io/Natural_Hazards_Map/"
+          id="op3"
         />
         {/* Project 4 */}
 
@@ -43,6 +46,7 @@ export const OtherProjects = () => {
           tech={["Javascript", "React", "Gsap 3", "Sass"]}
           code="https://github.com/Loliburta/Portfolio"
           site="https://loliburta.github.io/Portfolio"
+          id="op4"
         />
         {/* Project 5 */}
 
@@ -52,6 +56,7 @@ export const OtherProjects = () => {
           tech={["Javascript", "React", "Sass", "Nasa API"]}
           code="https://github.com/Loliburta/Asteroids_NASA_API"
           site="https://loliburta.github.io/Asteroids_NASA_API/"
+          id="op5"
         />
         {/* Project 6 */}
 
@@ -60,6 +65,7 @@ export const OtherProjects = () => {
           description="A python script used for gathering all user's auction from allegro and saving them to local nosql database with images"
           tech={["Python", "Allegro API", "OOP"]}
           code="https://github.com/Loliburta/Backup_allegro_auctions"
+          id="op6"
         />
       </div>
     </div>

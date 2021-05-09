@@ -8,6 +8,7 @@ interface Props {
   tech: string[];
   code: string;
   site?: string;
+  id: string;
 }
 export const Project: React.FC<Props> = ({
   title,
@@ -15,9 +16,10 @@ export const Project: React.FC<Props> = ({
   tech,
   code,
   site,
+  id,
 }) => {
   return (
-    <div className="otherProjects__projects__item">
+    <div className="otherProjects__projects__item" id={id ? id : ""}>
       <div className="otherProjects__projects__item__top">
         <div className="otherProjects__projects__item__top__icon">
           <Icon icon={folderIcon} height="50px" color="#ccd6f6" />

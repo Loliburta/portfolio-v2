@@ -57,35 +57,17 @@ export const NavigationBar = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
         <div className="navBar__links">
-          <Link
-            to="aboutMe"
-            spy={true}
-            smooth={true}
-            duration={300}
-            onSetActive={closeMenu}
-          >
+          <Link to="aboutMe" spy={true} smooth={true} duration={300}>
             <div className="navBar__links__link" id="nav__about">
               <strong className="mr-8">01.</strong> About
             </div>
           </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={350}
-            onSetActive={closeMenu}
-          >
+          <Link to="projects" spy={true} smooth={true} duration={350}>
             <div className="navBar__links__link" id="nav__projects">
               <strong className="mr-8">02.</strong> Projects
             </div>
           </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={550}
-            onSetActive={closeMenu}
-          >
+          <Link to="contact" spy={true} smooth={true} duration={550}>
             <div className="navBar__links__link" id="nav__contact">
               <strong className="mr-8">03.</strong> Contact
             </div>

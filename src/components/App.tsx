@@ -7,9 +7,11 @@ import { Projects } from "./projects/Projects";
 import { OtherProjects } from "./otherProjects/OtherProjects";
 import { Contact } from "./contact/Contact";
 import { Animations } from "../animations/Animations";
+import { ScrollTriggerAnimations } from "../animations/ScrollTriggerAnimations";
 
 export const App = () => {
   Animations();
+  ScrollTriggerAnimations();
   return (
     <>
       <NavigationBar />

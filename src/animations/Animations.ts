@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const Animations = () => {
   const [tl] = useState(gsap.timeline());
   useEffect(() => {
-    tl.from(".navBar__logo", { opacity: 0, duration: 0.5 });
+    tl.from(".navBar__logo", { opacity: 0, duration: 0.5, delay: 0.3 });
     tl.from(".navBar__hamburger", { opacity: 0, duration: 0.5 }, "-=0.5");
     tl.from("#nav__about", { y: "-=30", opacity: 0, duration: 0.2 });
     tl.from(

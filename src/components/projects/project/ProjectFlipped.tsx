@@ -9,6 +9,7 @@ interface Props {
   tech: string[];
   code: string;
   site: string;
+  id: string;
 }
 
 export const ProjectFlipped: React.FC<Props> = ({
@@ -18,9 +19,10 @@ export const ProjectFlipped: React.FC<Props> = ({
   tech,
   code,
   site,
+  id,
 }) => {
   return (
-    <li className="projects__list__item">
+    <li className="projects__list__item" id={id ? id : ""}>
       <div className="projects__list__item__content content--flipped">
         <div className="projects__list__item__content__overline">
           Featured Project
@@ -32,7 +34,10 @@ export const ProjectFlipped: React.FC<Props> = ({
         <div className="projects__list__item__content__tech ">
           {tech.map((name) => {
             return (
-              <div key={name} className="projects__list__item__content__tech__item item--flipped">
+              <div
+                key={name}
+                className="projects__list__item__content__tech__item item--flipped"
+              >
                 {name}
               </div>
             );

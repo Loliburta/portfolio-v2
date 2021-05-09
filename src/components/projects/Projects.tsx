@@ -23,6 +23,7 @@ export const Projects = () => {
             tech={["React", "Typescript", "TheMovieDB API", "Lodash"]}
             code="https://github.com/Loliburta/recruitment_movies_site"
             site="https://loliburta.github.io/recruitment_movies_site/"
+            id="p1"
           />
           <ProjectFlipped
             title="Weather App"
@@ -33,6 +34,7 @@ export const Projects = () => {
             tech={["React", "Sass", "Gsap 3", "OpenWeatherMap API"]}
             code="https://github.com/Loliburta/weather_app_v2"
             site="https://loliburta.github.io/weather_app_v2/"
+            id="p2"
           />
           <ProjectNormal
             title="Crypto Price Tracker"
@@ -43,6 +45,7 @@ export const Projects = () => {
             tech={["React", "Typescript", "Sass", "CoinGecko API"]}
             code="https://github.com/Loliburta/crypto_price_tracker"
             site="https://loliburta.github.io/crypto_price_tracker/"
+            id="p3"
           />
         </ul>
       </div>

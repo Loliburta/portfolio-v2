@@ -1036,6 +1036,7 @@ a {
   width: 100%;
   max-width: 100%;
   background-color: #2a3342;
+  padding-bottom: 80px;
 }
 
 .contact--wrapper__buildings {
@@ -1129,7 +1130,7 @@ a {
 @media (max-width: 480px) {
   .contact--wrapper__contact__description {
     font-size: 18px;
-    padding: 0px;
+    padding: 0px 0px 42px 0px;
   }
   .contact--wrapper__contact {
     padding: 60px 10px;

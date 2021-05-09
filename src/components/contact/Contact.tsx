@@ -3,13 +3,13 @@ import Buildings from "../../svg/Buildings.svg";
 
 export const Contact = () => {
   return (
-    <Element name="contact">
-      <div className="contact--wrapper">
-        <img
-          src={Buildings}
-          alt="buildings"
-          className="contact--wrapper__buildings"
-        />
+    <div className="contact--wrapper">
+      <img
+        src={Buildings}
+        alt="buildings"
+        className="contact--wrapper__buildings"
+      />
+      <Element name="contact">
         <div className="contact--wrapper__contact">
           <div className="contact--wrapper__contact__heading">Contact</div>
           <div className="contact--wrapper__contact__description">
@@ -21,7 +21,7 @@ export const Contact = () => {
           </div>
           <div className="contact--wrapper__contact__button">Send Mail</div>
         </div>
-      </div>
-    </Element>
+      </Element>
+    </div>
   );
 };
