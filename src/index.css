@@ -1036,7 +1036,7 @@ a {
   width: 100%;
   max-width: 100%;
   background-color: #2a3342;
-  padding-bottom: 80px;
+  padding-bottom: 130px;
 }
 
 .contact--wrapper__buildings {
@@ -1065,7 +1065,7 @@ a {
   position: relative;
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0px clamp(50px, 7vw, 70px) 150px clamp(50px, 7vw, 70px);
+  padding: 0px clamp(50px, 7vw, 70px);
 }
 
 .contact--wrapper__contact__heading {
