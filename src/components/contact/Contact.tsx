@@ -9,6 +9,7 @@ export const Contact = () => {
         alt="buildings"
         className="contact--wrapper__buildings"
       />
+
       <Element name="contact">
         <div className="contact--wrapper__contact">
           <div className="contact--wrapper__contact__heading">Contact</div>
@@ -19,6 +20,7 @@ export const Contact = () => {
               or send an email to <strong>Maranowski.Mateusz@gmail.com</strong>
             </p>
           </div>
+
           <div className="contact--wrapper__contact__button">Send Mail</div>
         </div>
       </Element>

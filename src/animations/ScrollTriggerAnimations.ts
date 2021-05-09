@@ -4,10 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const ScrollTriggerAnimations = () => {
-  const anim = (className: string, id?: string | undefined, start = 50) => {
+  const anim = (className: string, id?: string | undefined, start = 85) => {
     const result = className
       ? {
-          y: `+=${start}`,
+          y: "+=50",
           opacity: 0,
           scrollTrigger: {
             trigger: className,
@@ -15,11 +15,11 @@ export const ScrollTriggerAnimations = () => {
           },
         }
       : {
-          y: `+=${start}`,
+          y: "+=50",
           opacity: 0,
           scrollTrigger: {
             trigger: id,
-            start: "0% 85%",
+            start: `0% ${start}%`,
           },
         };
     return result;
@@ -48,7 +48,7 @@ export const ScrollTriggerAnimations = () => {
     );
     gsap.from(
       ".contact--wrapper__contact__button",
-      anim(".contact--wrapper__contact__button")
+      anim(".contact--wrapper__contact__button", "", 100)
     );
   }, []);
 };

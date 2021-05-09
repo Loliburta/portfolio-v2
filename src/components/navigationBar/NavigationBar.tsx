@@ -25,6 +25,7 @@ export const NavigationBar = () => {
     }
   }, [screenWidth]);
   useEffect(() => {
+    console.log(isOpen);
     const wrapper = document.getElementById("wrapper");
     if (isOpen) {
       wrapper!.style.filter = "blur(3px)";
@@ -77,36 +78,18 @@ export const NavigationBar = () => {
           </div>
         </div>
         <div className={isOpen ? "navBar__menu--active" : "navBar__menu"}>
-          <Link
-            to="aboutMe"
-            spy={true}
-            smooth={true}
-            duration={300}
-            onSetActive={closeMenu}
-          >
-            <div className="navBar__menu__link">
+          <Link to="aboutMe" spy={true} smooth={true} duration={300}>
+            <div className="navBar__menu__link" onClick={closeMenu}>
               <strong className="mr-8">01.</strong> About
             </div>
           </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={300}
-            onSetActive={closeMenu}
-          >
-            <div className="navBar__menu__link">
+          <Link to="projects" spy={true} smooth={true} duration={300}>
+            <div className="navBar__menu__link" onClick={closeMenu}>
               <strong className="mr-8">02.</strong> Projects
             </div>
           </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={300}
-            onSetActive={closeMenu}
-          >
-            <div className="navBar__menu__link">
+          <Link to="contact" spy={true} smooth={true} duration={300}>
+            <div className="navBar__menu__link" onClick={closeMenu}>
               <strong className="mr-8">03.</strong> Contact
             </div>
           </Link>
