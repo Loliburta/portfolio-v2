@@ -20,8 +20,9 @@ export const Contact = () => {
               or send an email to <strong>Maranowski.Mateusz@gmail.com</strong>
             </p>
           </div>
-
-          <div className="contact--wrapper__contact__button">Send Mail</div>
+          <div className="contact--wrapper__contact__button">
+            <a href="mailto:maranowski.mateusz@gmail.com">Send Mail </a>
+          </div>
         </div>
       </Element>
     </div>

@@ -44,6 +44,10 @@
       border-radius: 4px;
       cursor: pointer;
       color: rgb(204, 214, 246);
+      transition: background-color 0.5s ease;
+      &:hover {
+        background-color: rgba(39, 222, 191, 0.25);
+      }
     }
   }
   &__menu,
@@ -88,6 +92,10 @@
   cursor: pointer;
   font-size: 19px;
   color: rgb(204, 214, 246);
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: rgba(39, 222, 191, 0.25);
+  }
 }
 
 @media (max-width: 768px) {

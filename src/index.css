@@ -154,6 +154,13 @@ a {
   border-radius: 4px;
   cursor: pointer;
   color: #ccd6f6;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.navBar__links__resume:hover,
+.navBar--active__links__resume:hover {
+  background-color: rgba(39, 222, 191, 0.25);
 }
 
 .navBar__menu, .navBar__menu--active,
@@ -225,6 +232,12 @@ a {
   cursor: pointer;
   font-size: 19px;
   color: #ccd6f6;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.navBar__menu__resume:hover {
+  background-color: rgba(39, 222, 191, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -474,6 +487,12 @@ a {
   border: 1px solid #64ffda;
   border-radius: 3px;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.hero__button:hover {
+  background-color: rgba(39, 222, 191, 0.25);
 }
 
 @media (max-width: 480px) {
@@ -1125,6 +1144,12 @@ a {
   font-family: "Space Mono", monospace;
   color: #64ffda;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.contact--wrapper__contact__button:hover {
+  background-color: rgba(39, 222, 191, 0.25);
 }
 
 @media (max-width: 480px) {

@@ -46,9 +46,13 @@ export const ScrollTriggerAnimations = () => {
       ".contact--wrapper__contact__description",
       anim(".contact--wrapper__contact__description")
     );
-    gsap.from(
-      ".contact--wrapper__contact__button",
-      anim(".contact--wrapper__contact__button", "", 100)
-    );
+    gsap.from(".contact--wrapper__contact__button", {
+      y: "+=50",
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".contact--wrapper__contact__button",
+        start: "-900% 55%",
+      },
+    });
   }, []);
 };

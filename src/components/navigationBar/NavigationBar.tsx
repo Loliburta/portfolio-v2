@@ -4,6 +4,7 @@ import { useWindowWidth } from "@react-hook/window-size";
 import { Squash as Hamburger } from "hamburger-react";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import Logo from "../../svg/logo.svg";
+import cv from "../../cv/Mateusz_Maranowski_CV.pdf";
 export const NavigationBar = () => {
   const screenWidth = useWindowWidth();
   const [isOpen, setOpen] = useState(false);
@@ -73,9 +74,11 @@ export const NavigationBar = () => {
               <strong className="mr-8">03.</strong> Contact
             </div>
           </Link>
-          <div className="navBar__links__resume" id="nav__resume">
-            Resume
-          </div>
+          <a href={cv} rel="noopener noreferrer" target="_blank">
+            <div className="navBar__links__resume" id="nav__resume">
+              Resume
+            </div>
+          </a>
         </div>
         <div className={isOpen ? "navBar__menu--active" : "navBar__menu"}>
           <Link to="aboutMe" spy={true} smooth={true} duration={300}>
@@ -93,7 +96,9 @@ export const NavigationBar = () => {
               <strong className="mr-8">03.</strong> Contact
             </div>
           </Link>
-          <div className="navBar__menu__resume">Resume</div>
+          <a href={cv} rel="noopener noreferrer" target="_blank">
+            <div className="navBar__menu__resume">Resume</div>
+          </a>
         </div>
       </span>
     </div>

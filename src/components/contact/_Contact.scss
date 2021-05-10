@@ -60,6 +60,10 @@
       font-family: "Space Mono", monospace;
       color: rgb(100, 255, 218);
       cursor: pointer;
+      transition: background-color 0.5s ease;
+      &:hover {
+        background-color: rgba(39, 222, 191, 0.25);
+      }
     }
   }
 }

@@ -51,6 +51,10 @@
     border: 1px solid rgb(100, 255, 218);
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover {
+      background-color: rgba(39, 222, 191, 0.25);
+    }
   }
 }
 
