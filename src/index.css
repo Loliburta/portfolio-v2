@@ -382,6 +382,12 @@ a {
   color: #a8b2d1;
   letter-spacing: 1.2px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mail__text:hover {
+  color: #64ffda;
 }
 
 .mail:after {
@@ -390,6 +396,10 @@ a {
   margin: 0px auto;
   width: 1px;
   height: 90px;
+  background-color: #a8b2d1;
+}
+
+.mail:after:hover {
   background-color: #a8b2d1;
 }
 
