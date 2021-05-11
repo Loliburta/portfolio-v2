@@ -405,13 +405,18 @@ a {
   bottom: 0px;
   width: 19px;
   z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mail__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 25px;
   font-size: 12px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -427,10 +432,11 @@ a {
   color: #64ffda;
 }
 
-.mail:after {
+.mail__text:after {
   content: "";
   display: block;
   margin: 0px auto;
+  margin-top: 25px;
   width: 1px;
   height: 90px;
   background-color: #a8b2d1;
