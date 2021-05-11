@@ -1,5 +1,6 @@
 import { Element } from "react-scroll";
 import Buildings from "../../svg/Buildings.svg";
+import { Design } from "../designed/Design";
 
 export const Contact = () => {
   return (
@@ -25,6 +26,7 @@ export const Contact = () => {
           </div>
         </div>
       </Element>
+      <Design />
     </div>
   );
 };

@@ -11,10 +11,17 @@
     margin-bottom: 25px;
     &__icon {
       display: flex;
-      margin-top: 15px;
+      margin-top: 12px;
       cursor: pointer;
+      color: #a8b2d1;
+      transition: all 0.5s ease;
+      &:hover {
+        color: rgb(100, 255, 218);
+        transform: scale(1.25);
+      }
     }
   }
+
   &:after {
     content: "";
     display: block;
@@ -34,3 +41,5 @@
     display: none;
   }
 }
+
+

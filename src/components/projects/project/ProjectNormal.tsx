@@ -57,11 +57,14 @@ export const ProjectNormal: React.FC<Props> = ({
         </div>
       </div>
       <div className="projects__list__item__imageDiv">
-        <img
-          src={img}
-          alt="project 1"
-          className="projects__list__item__imageDiv__img"
-        />
+        <a href={site} className="projects__list__item__imageDiv__link">
+          <img
+            src={img}
+            loading="lazy"
+            alt="project 1"
+            className="projects__list__item__imageDiv__img"
+          />
+        </a>
       </div>
     </li>
   );

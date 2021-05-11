@@ -11,7 +11,7 @@ export const Socials = () => {
               icon={githubFill}
               width="23px"
               height="23px"
-              color="#a8b2d1"
+              className="socials__icons__icon"
             />
           </a>
         </div>
@@ -21,7 +21,7 @@ export const Socials = () => {
               icon={linkedinOutline}
               width="23px"
               height="23px"
-              color="#a8b2d1"
+              className="socials__icons__icon"
             />
           </a>
         </div>

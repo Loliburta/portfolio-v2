@@ -24,7 +24,7 @@ export const OtherProjects = () => {
         <Project
           title="Discord Bot"
           description="A bot made for streamer so her viewers can gamble points on discord and withdraw them to twitch and claim special prizes"
-          tech={["Javascript", "MongoDB", "Discord.js", "tmi.js"]}
+          tech={["Javascript", "Amazon AWS", "MongoDB", "Discord.js", "tmi.js"]}
           code="https://github.com/Loliburta/discord_bot"
           id="op2"
         />

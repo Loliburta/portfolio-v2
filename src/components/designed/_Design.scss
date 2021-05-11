@@ -1,0 +1,15 @@
+.design {
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  color: #656e8b;
+  font-family: "Space Mono", monospace;
+  &__text {
+    color: #656e8b;
+  }
+}
