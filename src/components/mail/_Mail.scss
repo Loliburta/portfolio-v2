@@ -28,9 +28,7 @@
     width: 1px;
     height: 90px;
     background-color: #a8b2d1;
-    &:hover {
-      background-color: #a8b2d1;
-    }
+    transition: none;
   }
 }
 @media (max-width: 1080px) {

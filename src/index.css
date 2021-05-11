@@ -434,10 +434,8 @@ a {
   width: 1px;
   height: 90px;
   background-color: #a8b2d1;
-}
-
-.mail:after:hover {
-  background-color: #a8b2d1;
+  -webkit-transition: none;
+  transition: none;
 }
 
 @media (max-width: 1080px) {
