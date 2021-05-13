@@ -844,10 +844,6 @@ a {
           align-items: center;
 }
 
-.projects__list__item__imageDiv__link, .projects__list__item--flipped__imageDiv__link {
-  height: 100%;
-}
-
 .projects__list__item__imageDiv__img, .projects__list__item--flipped__imageDiv__img {
   width: 100%;
   -webkit-filter: brightness(93%);

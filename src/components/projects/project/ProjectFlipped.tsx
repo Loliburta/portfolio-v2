@@ -56,16 +56,17 @@ export const ProjectFlipped: React.FC<Props> = ({
           </div>
         </div>
       </div>
-      <div className="projects__list__item__imageDiv imageDiv--flipped">
-        <a href={site} className="projects__list__item__imageDiv__link">
-          <img
-            src={img}
-            loading="lazy"
-            alt="project 2"
-            className="projects__list__item__imageDiv__img"
-          />
-        </a>
-      </div>
+      <a
+        href={site}
+        className="projects__list__item__imageDiv imageDiv--flipped"
+      >
+        <img
+          src={img}
+          loading="lazy"
+          alt="project 2"
+          className="projects__list__item__imageDiv__img"
+        />
+      </a>
     </li>
   );
 };
