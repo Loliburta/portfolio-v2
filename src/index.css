@@ -948,9 +948,12 @@ a {
   .projects__list__item__content__tech__item {
     margin: 0px 10px 0px 0px;
   }
-  .projects__list__item__imageDiv__img {
-    height: 100%;
+  .projects__list__item__imageDiv {
     opacity: 25%;
+  }
+  .projects__list__item__imageDiv__img {
+    opacity: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
