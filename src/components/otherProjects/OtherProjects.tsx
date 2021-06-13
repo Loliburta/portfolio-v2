@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Project } from "./project/Project";
 
 export const OtherProjects = () => {
+  const [moreProjectVisible, setMoreProjectVisible] = useState(false);
   return (
     <div className="otherProjects">
       <div className="otherProjects__heading">Other Cool Projects</div>
@@ -41,21 +43,21 @@ export const OtherProjects = () => {
         {/* Project 4 */}
 
         <Project
-          title="Portfolio Site v1"
-          description="My previous portfolio where I was just starting learning react and didn't know best practises yet"
-          tech={["Javascript", "React", "Gsap 3", "Sass"]}
-          code="https://github.com/Loliburta/Portfolio"
-          site="https://loliburta.github.io/Portfolio"
+          title="Typr"
+          description="A minimalistic typing website where you can track the text you're typing. Test your progress and improve your typing speed"
+          tech={["Typescript", "React", "Sass"]}
+          code="https://github.com/Loliburta/Typr"
+          site="https://loliburta.github.io/Typr/"
           id="op4"
         />
         {/* Project 5 */}
 
         <Project
-          title="Close Asteroids"
-          description="Simple site that shows today's asteroids that can be observable from earth without very professional equipment"
-          tech={["Javascript", "React", "Sass", "Nasa API"]}
-          code="https://github.com/Loliburta/Asteroids_NASA_API"
-          site="https://loliburta.github.io/Asteroids_NASA_API/"
+          title="Better TTV"
+          description="Twitch like site but with better resizing and you will be able to find out new small streamers there"
+          tech={["Typescript", "React", "Twitch API", "Sass"]}
+          code="https://github.com/Loliburta/better_ttv"
+          site="https://loliburta.github.io/better_ttv/"
           id="op5"
         />
         {/* Project 6 */}
@@ -67,6 +69,44 @@ export const OtherProjects = () => {
           code="https://github.com/Loliburta/Backup_allegro_auctions"
           id="op6"
         />
+        {/* Additional projects hidden before you click a button */}
+        {moreProjectVisible && (
+          <>
+            {/* Project 7 */}
+            <Project
+              title="Portfolio Site v1"
+              description="My previous portfolio site. I didn't know the best practises back then but it looks pretty cool tho"
+              tech={["Javascript", "React", "Gsap 3", "Sass"]}
+              code="https://github.com/Loliburta/Portfolio"
+              site="https://loliburta.github.io/Portfolio"
+              id="op7"
+            />
+            {/* Project 8 */}
+            <Project
+              title="Close Asteroids"
+              description="Simple site that shows today's asteroids that can be observable from earth without very professional equipment"
+              tech={["Javascript", "React", "Sass", "Nasa API"]}
+              code="https://github.com/Loliburta/Asteroids_NASA_API"
+              site="https://loliburta.github.io/Asteroids_NASA_API/"
+              id="op8"
+            />
+            {/* Project 9 */}
+            <Project
+              title="Github Profile"
+              description="A better look at github profile showing when you joined github most starred repos etc, sort repositories and check how you're profile looks"
+              tech={["Typescript", "React", "Github API", "Chart.js"]}
+              code="https://github.com/Loliburta/github_profile"
+              site="https://loliburta.github.io/github_profile/"
+              id="op9"
+            />
+          </>
+        )}
+      </div>
+      <div
+        className="otherProjects__button"
+        onClick={() => setMoreProjectVisible(!moreProjectVisible)}
+      >
+        Show More
       </div>
     </div>
   );

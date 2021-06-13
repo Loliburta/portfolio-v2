@@ -12,7 +12,7 @@
   padding: 0px 50px;
   width: 100%;
   height: 80px;
-  font-family: "Space Mono", monospace;
+  font-family: $-ff-mono;
   z-index: 100;
   transition: background-color 0.2s;
   &__logo {
@@ -33,24 +33,24 @@
       display: flex;
       padding: 3px 10px;
       margin: 0px 5px;
-      color: rgb(204, 214, 246);
+      color: $-c-lightGray;
       cursor: pointer;
       transition: color 0.5s ease;
       &:hover {
-        color: rgb(100, 255, 218);
+        color: $-c-green;
       }
     }
     &__resume {
       display: flex;
       padding: 8px 16px;
       margin-left: 15px;
-      border: 1px solid #64ffda;
+      border: 1px solid $-c-green;
       border-radius: 4px;
       cursor: pointer;
-      color: rgb(204, 214, 246);
+      color: $-c-lightGray;
       transition: background-color 0.5s ease;
       &:hover {
-        background-color: rgba(39, 222, 191, 0.25);
+        background-color: $-c-darkGreen;
       }
     }
   }
@@ -70,7 +70,7 @@
     height: 100vh;
     background-color: #112240;
     z-index: 5;
-    color: rgb(204, 214, 246);
+    color: $-c-lightGray;
     transform: translateX(0%);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
@@ -85,20 +85,20 @@
   display: flex;
   padding: 3px 10px;
   font-size: 19px;
-  color: rgb(204, 214, 246);
+  color: $-c-lightGray;
   cursor: pointer;
 }
 .navBar__menu__resume {
   display: flex;
   padding: 8px 40px;
-  border: 1px solid #64ffda;
+  border: 1px solid $-c-green;
   border-radius: 4px;
   cursor: pointer;
   font-size: 19px;
-  color: rgb(204, 214, 246);
+  color: $-c-lightGray;
   transition: background-color 0.5s ease;
   &:hover {
-    background-color: rgba(39, 222, 191, 0.25);
+    background-color: $-c-darkGreen;
   }
 }
 
@@ -113,10 +113,10 @@
   .navBar__hamburger {
     display: flex;
     position: absolute;
-    top: 23px;
+    top: 15px;
     right: 10px;
     font-size: 15px;
-    color: #64ffda;
+    color: $-c-green;
     cursor: pointer;
     z-index: 10;
   }
@@ -135,7 +135,7 @@
     height: 100vh;
     background-color: #112240;
     z-index: 5;
-    color: rgb(204, 214, 246);
+    color: $-c-lightGray;
     transform: translateX(100vw);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   }

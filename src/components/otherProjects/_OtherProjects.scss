@@ -9,10 +9,10 @@
     font-size: clamp(24px, 5vw, 32px);
     font-weight: 500;
     text-align: center;
-    color: #ccd6f6;
+    color: $-c-lightGray;
   }
   &__github {
-    font-family: "Space Mono", monospace;
+    font-family: $-ff-mono;
     font-size: 14px;
     text-align: center;
   }
@@ -21,7 +21,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
     padding: 0px;
-    margin: 50px 0px 0px;
+    margin: 50px 0px 25px 0px;
     position: relative;
     list-style: none;
     &__item {
@@ -29,7 +29,7 @@
       flex-direction: column;
       padding: 30px 25px;
       height: 350px;
-      background-color: rgb(19, 28, 46);
+      background-color: #131c2e;
       border-radius: 5px;
       &__top {
         display: flex;
@@ -50,7 +50,7 @@
         &__title {
           margin-bottom: 10px;
           font-size: 22px;
-          color: rgb(204, 214, 246);
+          color: $-c-lightGray;
         }
         &__description {
           font-size: 17px;
@@ -65,13 +65,31 @@
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          font-family: "Space Mono", monospace;
+          font-family: $-ff-mono;
           font-size: 13px;
           &__item {
             margin-right: 15px;
           }
         }
       }
+    }
+  }
+  &__button {
+    font-size: clamp(13px, 3vw, 15px);
+    padding: 13px 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-weight: 300;
+    font-family: $-ff-mono;
+    text-align: center;
+    color: $-c-lightGray;
+    border: 1px solid $-c-green;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover {
+      background-color: $-c-darkGreen;
     }
   }
 }

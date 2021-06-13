@@ -19,7 +19,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
     &:hover {
-      color: rgb(100, 255, 218);
+      color: $-c-green;
     }
     &:after {
       content: "";

@@ -29,17 +29,17 @@
       padding: 200px 43px 5px 0px;
       font-size: clamp(40px, 5vw, 60px);
       font-weight: 500;
-      color: #ccd6f6;
+      color: $-c-lightGray;
       &:before {
         content: "03.";
         display: flex;
         justify-content: flex-end;
         margin-right: 10px;
-        font-family: "Space Mono", monospace;
+        font-family: $-ff-mono;
         font-size: clamp(18px, 3vw, 23px);
         font-weight: 400;
         line-height: clamp(53px, 6.8vw, 77px);
-        color: rgb(100, 255, 218);
+        color: $-c-green;
       }
     }
     &__description {
@@ -56,15 +56,15 @@
       display: flex;
       padding: 15px 28px;
       margin: 0 auto;
-      border: 1px solid rgb(100, 255, 218);
+      border: 1px solid $-c-green;
       border-radius: 3px;
       font-size: 15px;
-      font-family: "Space Mono", monospace;
-      color: rgb(100, 255, 218);
+      font-family: $-ff-mono;
+      color: $-c-green;
       cursor: pointer;
       transition: background-color 0.5s ease;
       &:hover {
-        background-color: rgba(39, 222, 191, 0.25);
+        background-color: $-c-darkGreen;
       }
     }
   }
